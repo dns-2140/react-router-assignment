@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#root {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+:root {
+  --primary-color: rgb(3, 31, 38);
+  --primary-green: rgb(1, 61, 61);
+  --light-green: rgb(159, 226, 158);
+  --dark-text: rgb(2, 8, 39);
+  --white-color: rgb(247, 250, 250);
+}
+
 *,
 *::after,
 *::before {
@@ -6,11 +26,22 @@
   padding: 0;
 }
 
-nav {
-  background-color: aliceblue;
-  padding: 1rem;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
   display: flex;
-  gap: 1rem;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 4rem;
 }
 
 nav a {
@@ -19,5 +50,40 @@ nav a {
 }
 
 nav a.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #fff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background-color: var(--primary-green);
+  height: 100%;
+  color: var(--white-color);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+/* FOOTER */
+.footer {
+  position: fixed;
+  bottom: 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  display: flex;
+  width: 100%;
+  padding: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BUTTON */
+.CTA-button {
+  align-self: flex-start;
+  padding: 1rem 2rem;
+  background-color: var(--light-green);
+  border: 1px solid var(--primary-green);
+  color: var(--primary-green);
+  border-radius: 1rem;
 }
